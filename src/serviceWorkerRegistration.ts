@@ -77,6 +77,7 @@ function registerValidSW(swUrl: string, config?: Config) {
                   'tabs for this page are closed. See https://cra.link/PWA.'
               );
 
+              showUpdateBar();
               // Execute callback
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
@@ -139,4 +140,9 @@ export function unregister() {
         console.error(error.message);
       });
   }
+}
+
+function showUpdateBar() {
+  let snackbar = document.getElementById('snackbar') as  HTMLElement;
+      snackbar.className = 'show';
 }
