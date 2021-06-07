@@ -9,6 +9,12 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://cra.link/PWA
+// import Button from '@material-ui/core/Button';
+// import { makeStyles } from '@material-ui/core/styles';
+// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+// import Snackbar from '@material-ui/core/Snackbar';
+// import React from 'react';
+
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
@@ -17,6 +23,55 @@ const isLocalhost = Boolean(
     // 127.0.0.0/8 are considered localhost for IPv4.
     window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
 );
+
+// const useStyles = makeStyles((theme) => ({
+//   '@global': {
+//     body: {
+//       backgroundColor: theme.palette.background.paper,
+//     },
+//   },
+//   menuButton: {
+//     marginRight: theme.spacing(2),
+//   },
+//   fab: {
+//     position: 'absolute',
+//     bottom: theme.spacing(2),
+//     right: theme.spacing(2),
+//   },
+//   snackbar: {
+//     [theme.breakpoints.down('xs')]: {
+//       bottom: 90,
+//     },
+//   },
+// }));
+
+  // const classes = useStyles();
+
+  // const updateServiceWorker = () => {
+  //   serviceWorkerRegistration.register({
+  //     onSuccess: () => {},
+  //     onUpdate: registration => function(){
+  //       debugger
+  //       console.log('yeah we are getting update any ');
+  //       // <Snackbar
+  //       //       open
+  //       //       autoHideDuration={6000}
+  //       //       message="yeah we are getting a new update"
+  //       //       action={
+  //       //         <Button color="inherit" size="small" onClick={handleClick}>
+  //       //           Update
+  //       //         </Button>
+  //       //       }
+  //       //       className={classes.snackbar}
+  //       //     />
+  //     },
+  //   });
+  // };
+
+  // const handleClick = () => {
+  //   console.log('hear we need to update it')
+  // };
+
 
 type Config = {
   onSuccess?: (registration: ServiceWorkerRegistration) => void;
@@ -76,9 +131,10 @@ function registerValidSW(swUrl: string, config?: Config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://cra.link/PWA.'
               );
-
-              showUpdateBar();
+              // showUpdateBar();
+              // updateServiceWorker();
               // Execute callback
+              window.alert('yeas we getting a update 333')
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
               }
@@ -145,4 +201,5 @@ export function unregister() {
 function showUpdateBar() {
   let snackbar = document.getElementById('snackbar') as  HTMLElement;
       snackbar.className = 'show';
+
 }
