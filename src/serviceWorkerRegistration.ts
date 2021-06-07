@@ -198,8 +198,7 @@ export function unregister() {
   }
 }
 
-function showUpdateBar() {
-  let snackbar = document.getElementById('snackbar') as  HTMLElement;
-      snackbar.className = 'show';
-
-}
+// function showUpdateBar() {
+//   let snackbar = document.getElementById('snackbar') as  HTMLElement;
+//       snackbar.className = 'show';
+// }
