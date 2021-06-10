@@ -6,8 +6,8 @@ import Snackbar from '@material-ui/core/Snackbar';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Pokegame from './Pokegame';
-import Alert from '@material-ui/lab/Alert';
-import React, { FC, useEffect } from 'react';
+// import Alert from '@material-ui/lab/Alert';
+import React, {useEffect } from 'react';
 
 
 
