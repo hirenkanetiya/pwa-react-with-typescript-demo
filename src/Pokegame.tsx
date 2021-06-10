@@ -14,8 +14,8 @@ class Pokegame extends Component<PokegameProps> {
 	static defaultProps = {
 		pokemon : [
             {id:4 , name :'Hiren111111122222Edited', type : 'fire', exprience : 5},
-            {id:7 , name :'Kuldeep', type : 'water', exprience : 1},
-            {id:11 , name :'Rohit', type : 'bug', exprience : 5},
+            {id:7 , name :'Kuldeep Updated', type : 'water', exprience : 1},
+            {id:11 , name :'Rohit Updated', type : 'bug', exprience : 5},
             {id:12 , name :'Vicky', type : 'flying', exprience : 3},
             {id:25 , name :'Santosh', type : 'normal', exprience : 11},
             {id:39, name :'Mitesh', type : 'electric', exprience : 17},
