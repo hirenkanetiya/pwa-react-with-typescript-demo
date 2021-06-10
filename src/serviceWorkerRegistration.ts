@@ -134,7 +134,7 @@ function registerValidSW(swUrl: string, config?: Config) {
               // showUpdateBar();
               // updateServiceWorker();
               // Execute callback
-              window.alert('yeas we getting a update 333')
+              // window.alert('yeas we getting a update 333')
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
               }
