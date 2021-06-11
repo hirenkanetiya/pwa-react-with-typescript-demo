@@ -40,20 +40,23 @@ function App() {
   const [waitingServiceWorker, setWaitingServiceWorker] = React.useState<ServiceWorker | null>(null);
 
   useEffect(() => {
-    // serviceWorkerRegistration.register({
-    //   onUpdate: onSWUpdate 
-    // });
-    setInterval(() => {
-      console.log('yes time interval is ')
-        serviceWorkerRegistration.register({
-          onUpdate: onSWUpdate
-        });
-    }, 10000)
+    serviceWorkerRegistration.register({
+      onUpdate: onSWUpdate 
+    });
+    // setInterval(() => {
+    //   console.log('yes time interval is ')
+    //     serviceWorkerRegistration.register({
+    //       onUpdate: onSWUpdate
+    //     });
+    // }, 10000)
   }, []);
   
   const onSWUpdate = (registration: ServiceWorkerRegistration) => {
     setChange(true);
-    setWaitingServiceWorker(registration.waiting);
+    setInterval(() => {
+      console.log('yes time interval is ')
+      setWaitingServiceWorker(registration.waiting);
+    }, 10000)
   };
 
   // const updateAlert = function () {

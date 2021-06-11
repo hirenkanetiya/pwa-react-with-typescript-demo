@@ -78,10 +78,10 @@ self.addEventListener('message', (event) => {
 });
 
 
-let refreshing : boolean;
-self.addEventListener('controllerchange', function () {
-      if (refreshing) return;
-      window.location.reload();
-      refreshing = true;
-});
+// let refreshing : boolean;
+// self.addEventListener('controllerchange', function () {
+//       if (refreshing) return;
+//       window.location.reload();
+//       refreshing = true;
+// });
 // Any other custom service worker logic can go here.
