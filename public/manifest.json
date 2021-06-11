@@ -2,7 +2,7 @@
   "short_name": "My PWA Demo - ABC",
   "name": "My PWA App XYZ",
   "scope": "/",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#9021f3",
   "background_color": "#ffffff",
