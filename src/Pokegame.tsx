@@ -13,12 +13,12 @@ interface PokegameProps { // Added this interface for props
 class Pokegame extends Component<PokegameProps> {
 	static defaultProps = {
 		pokemon : [
-            {id:4 , name :'Hiren', type : 'fire', exprience : 5},
-            {id:7 , name :'Kuldeep Updated', type : 'water', exprience : 1},
-            {id:11 , name :'Rohit Updated', type : 'bug', exprience : 5},
+            {id:4 , name :'Hiren-Changeed-@6:41 ', type : 'fire', exprience : 5},
+            {id:7 , name :'Kuldeep----123251675', type : 'water', exprience : 1},
+            {id:11 , name :'Rohit', type : 'bug', exprience : 5},
             {id:12 , name :'Vicky', type : 'flying', exprience : 3},
             {id:25 , name :'Santosh', type : 'normal', exprience : 11},
-            {id:39, name :'Mitesh---Updated', type : 'electric', exprience : 17},
+            {id:39, name :'Mitesh', type : 'electric', exprience : 17},
             {id:94, name: 'Rishil', type: 'poison', exprience: 9 },
             {id:133 , name :'Manjunath', type : 'xyz', exprience : 10 } 
         ]

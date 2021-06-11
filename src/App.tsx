@@ -40,17 +40,15 @@ function App() {
   const [waitingServiceWorker, setWaitingServiceWorker] = React.useState<ServiceWorker | null>(null);
 
   useEffect(() => {
-    serviceWorkerRegistration.register({
-      onUpdate: onSWUpdate 
-      //  (registration) => {
-      //   console.log('12345------yeeyeyeyss');
-      //   setChange(true);
-      //   setWaitingServiceWorker(registration.waiting as ServiceWorker);
-  
-      //   // waitingWorker = registration && registration.waiting as ServiceWorker;
-      //   console.log('update avilable he',isUpdate);
-      // },
-    });
+    // serviceWorkerRegistration.register({
+    //   onUpdate: onSWUpdate 
+    // });
+    setInterval(() => {
+      console.log('yes time interval is ')
+        serviceWorkerRegistration.register({
+          onUpdate: onSWUpdate
+        });
+    }, 10000)
   }, []);
   
   const onSWUpdate = (registration: ServiceWorkerRegistration) => {
@@ -87,6 +85,7 @@ function App() {
   return (
    
      <div className="App">
+       
         <Pokegame />
         { isUpdate &&
            <Snackbar
